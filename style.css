@@ -67,7 +67,7 @@ h1,h2,h3,h4,h5,h6 {
 	flex-direction: column;
 	flex: 1 1 auto;
 	justify-content: center;
-
+   padding: 90px 0 0 0;
 }
 
 
@@ -81,7 +81,7 @@ h1,h2,h3,h4,h5,h6 {
 .header__subtitle {
 	color: #ffffff;
 	font-size: 16px;
-	line-height: 19px;
+	line-height: calc(19 / 11 * 100%);
 
 }
 
@@ -93,16 +93,18 @@ h1,h2,h3,h4,h5,h6 {
 .header__button {
    color: #ffffff;
 	font-size: 11px;
-   line-height: 13px;
-   letter-spacing: calc(3.7 / 11 * 100%);
+   line-height:calc(13 / 11 * 100%);
+   letter-spacing: 3.7px;
 }
+
 /*-------MAIN----------------------
 -------------------------------------*/
 
-/* .main {
+.main {
 	flex: 1 1 auto;
 }
-
+/*-------NAV----------------------
+-------------------------------------*/
 .nav_conteiner {
 	height: 65px;
 	max-width: 940px;
@@ -111,16 +113,105 @@ h1,h2,h3,h4,h5,h6 {
 	justify-content: space-between;
 	align-items: center;
 }
-.nav__logo {
-}
-.nav__item {
 
-}
 .nav__link {
 font-size: 12px;
 line-height: 14px;
-letter-spacing: 1.0909091234207153px;
+letter-spacing: 1.1px;
+color: #48555B;
+padding-right: 30px;
+}
+
+.nav__link:last-child {
+	padding-right: 0px;
+}
+
+.nav__link_blue {
+	color: #00A4E5;
+}
+
+/*-------STORY----------------------
+-------------------------------------*/
+.story {
+}
+
+.story__conteiner {
+	margin-top: 43px;
+}
+
+.story__title {
+   height: 48px;
+	font-size: 18px;
+	font-weight: 700;
+	line-height: calc(21 * 18/ 100%);
+	letter-spacing: 2.3px;
+	text-align: center;
+}
+.story__title:after {
+   content: "";
+   display: block;
+	height: 2px;
+	width: 50px;
+	margin: 15px auto 0;
+	
+	background-color: #00A4E5;
+}
+
+.story__subtitle {
 
 }
-.nav__link_blue {
-} */
+
+.story__text {
+	max-width: 50%;
+
+}
+
+.story__text-up {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: calc(23 * 20 / 100%);
+	letter-spacing: 0.2px;
+	text-align: left;
+}
+
+.text_blue {
+	color: #00A4E5;
+}
+
+.story__text-down {
+font-size: 13px;
+font-weight: 400;
+line-height: calc(23 * 13) / 100%;
+letter-spacing: 0.2px;
+text-align: left;
+
+}
+
+.story__columns {
+}
+
+.story__column {
+}
+
+.column__title {
+}
+
+.column__image {
+}
+
+/*-------FOOTER----------------------
+-------------------------------------*/
+
+.footer {
+	display: flex;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	background-color: #171819;
+	
+	color: #ffffff;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: calc(13 * 11 / 100%);
+	letter-spacing: 0.9px;
+}
